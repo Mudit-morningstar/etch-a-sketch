@@ -1,0 +1,12 @@
+:root {
+    --rowNum: 16;
+}
+
+.grid {
+    display: grid;
+    width: 500px;
+    height: 500px;
+    background-color: aqua;
+    grid-template-columns: repeat(var(--rowNum), 1fr);
+    grid-template-rows: repeat(var(--rowNum), 1fr);
+}
