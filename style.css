@@ -1,3 +1,14 @@
+:host{
+    background-color: grey;
+}
+body{
+
+    background-color: beige;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    margin: 0px;
+}
 :root {
     --rowNum: 16;
 }
@@ -6,7 +17,27 @@
     display: grid;
     width: 500px;
     height: 500px;
-    background-color: aqua;
     grid-template-columns: repeat(var(--rowNum), 1fr);
     grid-template-rows: repeat(var(--rowNum), 1fr);
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    background-color: white;
+}
+
+button {
+    padding: 10px 20px;
+    font-size: 18px;
+    margin: 20px;
+}
+
+footer {
+    background-color: darkgray;
+    display: flex;
+    justify-content: center;
+}
+
+.grid-container {
+    display: flex;
+    align-items: center;
+    padding: 30px 60px;
+    flex-direction: column;
 }
